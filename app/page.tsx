@@ -15,9 +15,9 @@ export default function HomePage() {
       {/* Hero Section */}
       <Box
         sx={{
-            minHeight: 'calc(50vh - 64px)',       // account for your AppBar
-            bgcolor: 'background.default',         // switches with light/dark
-            color: 'text.primary',                 // switches with light/dark
+            minHeight: 'calc(50vh - 64px)',      
+            bgcolor: 'background.default',         
+            color: 'text.primary',
             py: 8,
           }}
       >
@@ -25,13 +25,12 @@ export default function HomePage() {
           <Typography variant="h2" component="h1" gutterBottom>
             Uri Creative Sentiment Insights
           </Typography>
-          <Typography variant="h6" color="textSecondary" paragraph>
+          <Typography variant="h6" color="textSecondary">
             Dive deep into the sentiment trends for your favorite topics with interactive charts and real-time data.
           </Typography>
         </Container>
       </Box>
 
-      {/* Centered URI Box */}
       <Box
         sx={{
           flexGrow: 1,

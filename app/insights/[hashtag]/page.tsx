@@ -32,7 +32,6 @@ export default function InsightPage() {
   const router = useRouter();
   const params = useParams();
 
-  // Extract hashtag safely from params
   const hashtag =
     typeof params.hashtag === 'string'
       ? params.hashtag
@@ -42,7 +41,6 @@ export default function InsightPage() {
 
   const [selected, setSelected] = useState<string>(hashtag);
 
-  // Keep URL in sync with dropdown selection
   useEffect(() => {
     if (selected !== hashtag) {
       router.replace(`/insights/${selected}`);
@@ -77,7 +75,7 @@ export default function InsightPage() {
         </Box>
       )}
 
-      {/* Loading spinner or trend card */}
+      {/* Loading spinner*/}
       {loading || !data ? (
         <Box mt={4} display="flex" justifyContent="center">
           <CircularProgress />
