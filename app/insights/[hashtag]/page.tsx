@@ -57,7 +57,7 @@ export default function InsightPage() {
   );
 
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" sx={{ backgroundColor: 'background.default' }}>
       {/* Dropdown */}
       <Box mt={4} display="flex" justifyContent="center">
         <Select value={selected} onChange={handleChange}>
